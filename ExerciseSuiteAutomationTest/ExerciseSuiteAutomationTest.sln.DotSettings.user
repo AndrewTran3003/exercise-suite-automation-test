@@ -3,5 +3,6 @@
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::AB3D7A6F-9FFE-48D3-A2C9-385A62028577::net6.0::ExerciseSuiteAutomationTest.Features.CalculatorFeature.AddTwoNumbers&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::AB3D7A6F-9FFE-48D3-A2C9-385A62028577::net6.0::ExerciseSuiteAutomationTest.Features.TestFeatureFeature.AddTwoNumbers&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::AB3D7A6F-9FFE-48D3-A2C9-385A62028577::net6.0::ExerciseSuiteAutomationTest.Features.EquipmentsFeature.AddAEquipment&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

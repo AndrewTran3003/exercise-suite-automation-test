@@ -5,8 +5,8 @@ namespace ExerciseSuiteAutomationTest.Handlers;
 
 public class EquipmentAddingHandler: IRequestHandler<EquipmentCreationRequest,EquipmentCreationResponse>
 {
-    public Task<EquipmentCreationResponse> Handle(EquipmentCreationRequest request, CancellationToken cancellationToken)
+    public async Task<EquipmentCreationResponse> Handle(EquipmentCreationRequest request, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        return new EquipmentCreationResponse();
     }
 }

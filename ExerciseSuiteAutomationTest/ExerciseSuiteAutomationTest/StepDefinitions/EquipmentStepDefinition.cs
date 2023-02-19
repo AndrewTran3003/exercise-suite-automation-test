@@ -1,6 +1,7 @@
 using AutoMapper;
 using ExerciseSuiteAutomationTest.Models;
 using MediatR;
+using NUnit.Framework;
 
 namespace ExerciseSuiteAutomationTest.StepDefinitions;
 
@@ -16,12 +17,13 @@ public sealed class EquipmentStepDefinition
       _mapper = mapper;
    }
    [Given("there is some equipment with the following details")]
-   public void CreateEquipments(Table table)
+   public async Task CreateEquipments(Table table)
    {
       List<BaseEquipment> equipmentList = ParseEquipmentListFromTable(table);
-      List<EquipmentCreationRequest> equipmentListRequest =
-         equipmentList.Select(e => _mapper.Map<EquipmentCreationRequest>(e)).ToList();
-      _mediator.Send(equipmentListRequest);
+      EquipmentCreationRequest equipmentRequest =
+         _mapper.Map<EquipmentCreationRequest>(equipmentList.FirstOrDefault());
+     var x = await _mediator.Send(equipmentRequest);
+     Assert.NotNull(x);
    }
 
    private List<BaseEquipment> ParseEquipmentListFromTable(Table table)

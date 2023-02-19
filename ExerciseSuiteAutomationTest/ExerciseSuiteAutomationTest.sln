@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseSuiteAutomationTest", "ExerciseSuiteAutomationTest\ExerciseSuiteAutomationTest.csproj", "{AB3D7A6F-9FFE-48D3-A2C9-385A62028577}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlow.DependencyInjection", "SpecFlow.DependencyInjection\SpecFlow.DependencyInjection\SpecFlow.DependencyInjection.csproj", "{D18CD4C0-B306-4870-A309-F600FEB32FD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AB3D7A6F-9FFE-48D3-A2C9-385A62028577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB3D7A6F-9FFE-48D3-A2C9-385A62028577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB3D7A6F-9FFE-48D3-A2C9-385A62028577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18CD4C0-B306-4870-A309-F600FEB32FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18CD4C0-B306-4870-A309-F600FEB32FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18CD4C0-B306-4870-A309-F600FEB32FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18CD4C0-B306-4870-A309-F600FEB32FD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
