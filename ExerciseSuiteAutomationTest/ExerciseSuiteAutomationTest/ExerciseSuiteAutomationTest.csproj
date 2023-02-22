@@ -8,13 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
-    <PackageReference Include="MediatR" Version="11.1.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
-    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
-    <PackageReference Include="SpecFlow.NUnit" Version="3.9.40" />
-    <PackageReference Include="nunit" Version="3.13.2" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.1.0" />
-    <PackageReference Include="FluentAssertions" Version="6.2.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="12.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+    <PackageReference Include="nunit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.3.1" />
+    <PackageReference Include="FluentAssertions" Version="6.10.0" />
+    <PackageReference Include="SpecFlow" Version="3.9.8" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,4 +22,14 @@
     <Folder Include="Support\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="SolidToken.SpecFlow.DependencyInjection" />
+    <None Remove="SpecFlow" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SolidToken.SpecFlow.DependencyInjection.SpecFlowPlugin">
+      <HintPath>..\..\..\..\..\SpecFlow.DependencyInjection\SpecFlow.DependencyInjection\bin\netstandard2.0\SolidToken.SpecFlow.DependencyInjection.SpecFlowPlugin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
