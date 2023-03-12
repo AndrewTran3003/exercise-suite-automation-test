@@ -1,4 +1,8 @@
 using ExerciseSuiteAutomationTest.Mappers;
+using ExerciseSuiteAutomationTest.StepDefinitions;
+using GraphQL.Client.Abstractions;
+using GraphQL.Client.Http;
+using GraphQL.Client.Serializer.Newtonsoft;
 using Microsoft.Extensions.DependencyInjection;
 using SolidToken.SpecFlow.DependencyInjection;
 
@@ -11,7 +15,8 @@ public static class TestSetup
     {
         var services = new ServiceCollection();
         services.AddAutoMapper(typeof(EquipmentMapper));
-        
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<EquipmentStepDefinition>());
+        services.AddScoped<IGraphQLClient>(s => new GraphQLHttpClient("localhost", new NewtonsoftJsonSerializer()));
         return services;
     }
 }
