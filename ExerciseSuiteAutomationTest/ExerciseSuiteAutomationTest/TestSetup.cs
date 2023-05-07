@@ -16,7 +16,7 @@ public static class TestSetup
         var services = new ServiceCollection();
         services.AddAutoMapper(typeof(EquipmentMapper));
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<EquipmentStepDefinition>());
-        services.AddScoped<IGraphQLClient>(s => new GraphQLHttpClient("localhost", new NewtonsoftJsonSerializer()));
+        services.AddScoped<IGraphQLClient>(s => new GraphQLHttpClient("http://localhost:5240/graphql", new NewtonsoftJsonSerializer()));
         return services;
     }
 }

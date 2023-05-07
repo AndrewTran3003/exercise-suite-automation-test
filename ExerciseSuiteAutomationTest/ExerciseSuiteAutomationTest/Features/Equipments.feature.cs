@@ -114,9 +114,6 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("there is some equipment with the following details", ((string)(null)), table1, "Given ");
 #line hidden
 #line 9
- testRunner.When("I get the equipment list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 10
  testRunner.Then("I can find my equipment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
